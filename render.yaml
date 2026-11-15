@@ -2,7 +2,7 @@ services:
   - type: web
     name: golubka-avia
     runtime: docker
-    plan: starter
+    plan: free
     region: frankfurt
     healthCheckPath: /api/health
     envVars:
@@ -15,6 +15,6 @@ services:
 
 databases:
   - name: golubka-avia-db
-    plan: 0.1c-256mb
+    plan: free
     region: frankfurt
     ipAllowList: []
