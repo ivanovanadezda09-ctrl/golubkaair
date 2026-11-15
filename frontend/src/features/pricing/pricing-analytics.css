@@ -1,0 +1,36 @@
+.pricing-comparison,.pricing-quantiles{background:linear-gradient(135deg,#fffaf4,#fff5ed)}
+.pricing-scenarios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:16px 0}
+.pricing-scenarios article{padding:16px 18px;border-radius:22px;background:linear-gradient(145deg,#f2f7ff,#e9f1fa);box-shadow:0 5px 16px #14234b0d}
+.pricing-scenarios article:nth-child(2){background:linear-gradient(145deg,#f0f9f8,#daf0ee)}
+.pricing-scenarios article:nth-child(3){background:linear-gradient(145deg,#fff8ef,#fbe9da)}
+.pricing-scenarios h3{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:1rem;font-weight:750}
+.pricing-scenario-icon{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:10px;background:#fff9;color:#285785}
+.pricing-scenario-price,.pricing-finale strong{display:block;font-size:clamp(1.6rem,3vw,2.55rem);font-weight:800;line-height:1.15;font-variant-numeric:tabular-nums}
+.pricing-scenarios dl{margin:12px 0 0}
+.pricing-scenarios dl div{display:flex;justify-content:space-between;align-items:baseline;gap:6px;padding:4px 0}
+.pricing-scenarios dd{margin:0;text-align:right;font-weight:650;font-variant-numeric:tabular-nums}
+.pricing-scenario-profit{flex-wrap:wrap;border-top:1px solid #14234b16;margin-top:6px}
+.pricing-scenario-profit dd{font-size:1.15rem;font-weight:800}
+.pricing-comparison-detail summary,.pricing-quantile-detail summary{width:fit-content;cursor:pointer;border-radius:12px;background:#eaf1fb;padding:8px 12px;color:#224d81;font-weight:650}
+.pricing-comparison-detail .table-wrap,.pricing-quantile-detail .table-wrap{margin-top:10px}
+.pricing-quantile-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);align-items:center;gap:18px;margin:8px 0 16px}
+.pricing-quantile-layout .plot{height:260px}
+.pricing-quantile-note{border-radius:20px;padding:16px;background:linear-gradient(150deg,#e8f3fe,#fff5e8)}
+.pricing-quantile-note h3{margin:0 0 8px;font-size:1rem;font-weight:750}
+.pricing-quantile-note p,.pricing-strategy dd{font-size:.88rem;line-height:1.45}
+.pricing-strategy{display:grid;gap:6px;margin:10px 0}
+.pricing-strategy>div{background:#ffffffa6;border-radius:12px;padding:7px 9px}
+.pricing-strategy dt{display:flex;align-items:center;gap:7px;font-weight:700;font-size:.88rem}
+.pricing-strategy dt span{padding:2px 6px;border-radius:6px;background:#e2edf9;color:#224d81;font-variant-numeric:tabular-nums}
+.pricing-strategy>div:nth-child(2) dt span{background:#fcebd6;color:#89420f}
+.pricing-strategy dd{margin:3px 0 0}
+.pricing-quantile-detail summary{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:42px;list-style:none}
+.pricing-quantile-detail summary::-webkit-details-marker{display:none}
+.pricing-quantile-detail summary::after{content:'';width:7px;height:7px;flex:none;border:solid currentColor;border-width:0 2px 2px 0;transform:translateY(-2px) rotate(45deg)}
+.pricing-quantile-detail[open] summary::after{transform:translateY(2px) rotate(225deg)}
+.pricing-quantiles table,.pricing-comparison-detail table{min-width:520px;font-variant-numeric:tabular-nums}
+.pricing-quantiles th,.pricing-quantiles td{border-bottom:1px solid #14234b10}
+.pricing-quantiles .median-row{font-weight:750}
+.panel.pricing-finale{background-image:url('/coast-wing.webp'),linear-gradient(90deg,#fff2e6 42%,#fff4e644),url('/coast-sky.webp');background-size:min(42%,440px) auto,cover,cover;min-height:180px;gap:12px}
+.pricing-finale strong{color:#a64c05;margin:4px 0 8px}
+@media(max-width:760px){.pricing-scenarios,.pricing-quantile-layout{grid-template-columns:minmax(0,1fr)}.pricing-quantile-layout{gap:10px}}

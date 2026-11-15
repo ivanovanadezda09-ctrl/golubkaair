@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-sqlite:////state/reshis.sqlite3}
+      SECURE_COOKIE: ${SECURE_COOKIE:-0}
+      PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-}
+    volumes:
+      - state:/state
+    restart: unless-stopped
+volumes:
+  state:

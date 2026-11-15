@@ -1,0 +1,26 @@
+.optimal-calendar-header,.optimal-calendar-nav{display:flex;align-items:center;gap:10px}
+.optimal-calendar-header{justify-content:space-between;flex-wrap:wrap;margin-bottom:7px}
+.optimal-calendar-nav strong{text-transform:capitalize;min-width:8rem;text-align:center}
+.optimal-calendar-nav button{padding:0;width:32px;height:30px;line-height:1;font-size:1.3rem;border:0;background:#edf3fa}
+.optimal-calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;margin-top:12px}
+.optimal-weekday{text-align:center;color:var(--ink-soft);font-size:.8rem}
+.optimal-calendar-grid button{display:grid;align-content:start;gap:2px;min-width:0;padding:7px 9px;text-align:left;border:0;background:#f5f3ee;font-variant-numeric:tabular-nums}
+.optimal-calendar-grid button:hover{background:#edf3fa}
+.optimal-calendar-grid button.optimal-best{background:#f8e8d3}
+.optimal-calendar-grid button[aria-pressed=true]{box-shadow:inset 0 0 0 2px var(--blue);background:#e5eff9}
+.optimal-day{color:var(--blue);font-size:.82rem}
+.optimal-day span{color:#a64c05}
+.optimal-calendar-grid small{color:var(--ink-soft);font-weight:550}
+.optimal-calendar-legend{margin-top:9px}
+.optimal-compact{display:none}
+@media(max-width:800px){
+  .optimal-full{display:none}
+  .optimal-compact{display:block;white-space:nowrap;font-size:clamp(.56rem,2vw,.76rem)}
+  .optimal-calendar-grid{gap:3px}
+  .optimal-calendar-grid button{padding:5px 0;text-align:center}
+}
+.optimal-calendar.panel{background:linear-gradient(150deg,#f5f9ff,#fff8ee 75%)}
+.optimal-calendar-grid button{border-radius:12px;min-height:56px;box-shadow:0 2px 6px #14234b0b;background:#fffdf7;transition:background-color .15s,box-shadow .15s}
+.optimal-calendar-grid button:hover,.optimal-calendar-grid button:focus-visible{box-shadow:0 2px 9px #14234b25;background:#edf3fa}
+.optimal-calendar-grid button.optimal-best:hover,.optimal-calendar-grid button.optimal-best:focus-visible{background:#f9e4c8}
+.optimal-calendar-grid button[aria-pressed=true]{box-shadow:inset 0 0 0 2px var(--blue);background:#e5eff9}
